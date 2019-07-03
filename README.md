@@ -54,10 +54,30 @@ print(emptyString)
 
 Print each character in the string `"Hello world!"`
 ```
+var str = "Hello, playground"
+
 var stringN = "Hello world"
-for c in stringN {
+var stringArray = stringN.components(separatedBy: " ")
+for c in stringArray {
 print(c)
 }
+
+//or
+
+var string = "hey hey"
+var space = " "
+var currentString = ""
+
+for character in string {
+if String(character) == space {
+print(currentString)
+currentString = ""
+continue
+}
+currentString += String(character)
+}
+print(currentString)
+
 ```
 ## Question 5
 

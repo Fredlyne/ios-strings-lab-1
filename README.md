@@ -296,7 +296,9 @@ You are given a string stored in variable `problem`. Write code so that you prin
 ```swift
 var problem = "split this string into words and print them on separate lines"
 
-// Your code
+
+print(problem.replacingOccurrences(of:" ", with: "\n"))
+
 ```
 
 Example:
